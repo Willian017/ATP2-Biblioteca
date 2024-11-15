@@ -253,9 +253,25 @@ void Menu(Livros AuxLivros, Autores AuxAutores, Emprestimos AuxEmprestimos, Pess
 void CalculaTLs(int TLL, int TLA, int TLE, int TLP, int TLLA)
 {
 }
-
+void CriarArquivos(void)
+{
+	FILE *Ptr;
+	
+	Ptr = fopen("Livros.dat","ab");
+	fclose(Ptr);
+	Ptr = fopen("Autor.dat","ab");
+	fclose(Ptr);
+	Ptr = fopen("Emprestimos.dat","ab");
+	fclose(Ptr);
+	Ptr = fopen("AutorLivro.dat","ab");
+	fclose(Ptr);
+	Ptr = fopen("Pessoas.dat","ab");
+	fclose(Ptr);
+}
 int main()
 {
+	CriarArquivos();
+
 	int TLL=0, TLA=0, TLE=0, TLP=0, TLLA=0;
 	
 	Livros AuxLivros[200]; Autores AuxAutores[200]; Emprestimos AuxEmprestimos[500]; Pessoas AuxPessoas[100]; LivroAutor AuxLivroAutor[500];

@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <windows.h>
 
-struct Livros{
+struct Livro{
     int id_livro, ano, status;
 
     char titulo[50];

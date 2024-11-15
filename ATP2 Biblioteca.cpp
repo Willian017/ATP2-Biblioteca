@@ -252,7 +252,6 @@ void Menu(Livros AuxLivros, Autores AuxAutores, Emprestimos AuxEmprestimos, Pess
 
 void CalculaTLs(int TLL, int TLA, int TLE, int TLP, int TLLA)
 {
-	
 }
 
 int main()
